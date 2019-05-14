@@ -29,6 +29,20 @@ public class JsoupCrawler {
         }
     }
 
+    public static String writeHtml(String htmlTag) {
+        StringBuilder html = new StringBuilder();
+        html.append("<!DOCTYPE html>");
+        html.append("<html lang=\"ko\">");
+        html.append("<head> <meta charset=\"utf-8\">");
+        html.append("<title>주요뉴스 Crawling</title>");
+        html.append("</head>");
+        html.append("<body><div><ul>");
+        html.append(htmlTag);
+        html.append("</ul></div></body>");
+        html.append("</html>");
+        return html.toString();
+    }
+
     public static String makeHtml(String htmlTag) {
         StringBuilder html = new StringBuilder();
         html.append("<!DOCTYPE html>");
