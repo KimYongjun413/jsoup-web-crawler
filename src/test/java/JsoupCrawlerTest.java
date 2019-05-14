@@ -6,6 +6,13 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class JsoupCrawlerTest {
+
+    @Test
+    public void makeHtml() {
+        assertEquals("<!DOCTYPE html><html lang=\"ko\"><head> <meta charset=\"utf-8\"><title>주요뉴스 Crawling</title></head><body><div><ul><li>test_html_tag</li></ul></div></body></html>", JsoupCrawler.makeHtml("<li>test_html_tag</li>"));
+        assertEquals("<!DOCTYPE html><html lang=\"ko\"><head> <meta charset=\"utf-8\"><title>주요뉴스 Crawling</title></head><body><div><ul><li>Kim Yongjun</li></ul></div></body></html>", JsoupCrawler.makeHtml("<li>Kim Yongjun</li>"));
+    }
+
     @Test
     public void Cookbook() {
         String html = "<p>An <a href='http://example.com/'><b>example</b></a> link.</p>";
