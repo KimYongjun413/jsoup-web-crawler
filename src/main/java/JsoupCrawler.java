@@ -13,17 +13,10 @@ public class JsoupCrawler {
         try {
             Document doc = Jsoup.connect(URL).get();
             Elements elements = doc.select("div.home_news");
-            String title = elements.select("h2").text().substring(0,4);
 
-            System.out.println("===================================================================================");
-            System.out.println(title);
-            System.out.println("===================================================================================");
-            int idx = 0;
-            for (Element element : elements.select("li")) {
-                System.out.println(++idx + " : " + element.getElementsByAttribute("href").text());
-
+            for (Element element : elements.select("li > a")) {
+                System.out.println("<li><a href=\"https://sports.news.naver.com" + element.attr("href") +"\"><span>"+element.getElementsByTag("span").text()+"</span></a></li>");
             }
-            System.out.println("===================================================================================\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
