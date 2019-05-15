@@ -35,8 +35,9 @@ public class JsoupCrawler {
         html.append("<html lang=\"ko\">");
         html.append("<head> <meta charset=\"utf-8\">");
         html.append("<title>주요뉴스 Crawling</title>");
+        html.append("<style>.major-news {color:orange;text-shadow:1px 1px;}</style>");
         html.append("</head>");
-        html.append("<body><div><ul>");
+        html.append("<body><div><h1 class=\"major-news\">주요뉴스</h1><ul>");
         html.append(htmlTag);
         html.append("</ul></div></body>");
         html.append("</html>");
