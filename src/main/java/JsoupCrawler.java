@@ -57,5 +57,10 @@ public class JsoupCrawler {
 
         return html.toString();
     }
+
+    public static String absUrl(String url, String relHref) {
+        int idx = url.indexOf(relHref.split("/")[1]);
+        return url.substring(0,idx -1) + relHref;
+    }
 }
 

@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cd09abee-3894-41ab-b9c6-db0b4b97edbf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JsoupCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsoupCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JsoupCrawlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JsoupCrawlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/주요뉴스.html" beforeDir="false" afterPath="$PROJECT_DIR$/주요뉴스.html" afterDir="false" />
     </list>
     <list id="29694fdb-7bdb-4810-bdea-f70e94ab480d" name="refactoring, makeHtmlTag 메서드 추가" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/JsoupCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsoupCrawler.java" afterDir="false" />
@@ -22,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
+            <state relative-caret-position="625">
               <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
             </state>
           </provider>
@@ -40,8 +43,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/JsoupCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="154">
+              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,11 +55,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/JsoupCrawlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="12" column="206" selection-start-line="12" selection-start-column="206" selection-end-line="12" selection-end-column="206" />
+            <state relative-caret-position="304">
+              <caret line="31" column="22" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/주요뉴스.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="549" lean-forward="true" selection-start-column="549" selection-end-column="549" />
             </state>
           </provider>
         </entry>
@@ -81,9 +96,18 @@
       </list>
     </option>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/JsoupCrawler.java">
+      <ranges>
+        <range start1="17" end1="29" start2="17" end2="33" changelist="29694fdb-7bdb-4810-bdea-f70e94ab480d" />
+        <range start1="45" end1="58" start2="49" end2="55" changelist="29694fdb-7bdb-4810-bdea-f70e94ab480d" />
+        <range start1="59" end1="59" start2="56" end2="61" changelist="cd09abee-3894-41ab-b9c6-db0b4b97edbf" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="845" />
-    <option name="y" value="-12" />
+    <option name="x" value="890" />
+    <option name="y" value="-22" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -172,11 +196,11 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.JsoupCrawler">
-    <configuration name="JsoupCrawlerTest.Cookbook" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JsoupCrawlerTest.absUrl" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
       <module name="jsoup-web-crawler" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JsoupCrawlerTest" />
-      <option name="METHOD_NAME" value="Cookbook" />
+      <option name="METHOD_NAME" value="absUrl" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -222,10 +246,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.JsoupCrawler" />
+        <item itemvalue="Android JUnit.JsoupCrawlerTest.absUrl" />
         <item itemvalue="Android JUnit.JsoupCrawlerTest.writeHtml" />
         <item itemvalue="Android JUnit.JsoupCrawlerTest.makeHtml" />
         <item itemvalue="JUnit.JsoupCrawlerTest.Cookbook" />
-        <item itemvalue="Android JUnit.JsoupCrawlerTest.Cookbook" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +259,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cd09abee-3894-41ab-b9c6-db0b4b97edbf" name="Default Changelist" comment="" />
-      <changelist id="" name="기사제목,기사URL 가져오기" comment="" />
       <changelist id="29694fdb-7bdb-4810-bdea-f70e94ab480d" name="refactoring, makeHtmlTag 메서드 추가" comment="" />
       <created>1557761741986</created>
       <option name="number" value="Default" />
@@ -291,22 +314,17 @@
       <option name="project" value="LOCAL" />
       <updated>1557848542609</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="크롤링된 뉴스 생성">
+      <created>1557848939920</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1557848939920</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JsoupCrawlerTest_Cookbook - 2019.05.14 at 20h 59m 03s.xml">
-      <configuration name="JsoupCrawlerTest.Cookbook" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="JsoupCrawlerTest_Cookbook - 2019.05.14 at 21h 01m 13s.xml">
-      <configuration name="JsoupCrawlerTest.Cookbook" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="JsoupCrawlerTest_Cookbook - 2019.05.14 at 23h 49m 50s.xml">
-      <configuration name="JsoupCrawlerTest.Cookbook" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JsoupCrawlerTest_Cookbook - 2019.05.14 at 23h 50m 22s.xml">
-      <configuration name="JsoupCrawlerTest.Cookbook" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JsoupCrawlerTest_Cookbook - 2019.05.14 at 23h 50m 41s.xml">
       <configuration name="JsoupCrawlerTest.Cookbook" configurationId="JUnit" />
     </history-entry>
@@ -325,6 +343,18 @@
     <history-entry file="JsoupCrawlerTest_writeHtml - 2019.05.15 at 00h 40m 46s.xml">
       <configuration name="JsoupCrawlerTest.writeHtml" configurationId="AndroidJUnit" />
     </history-entry>
+    <history-entry file="JsoupCrawlerTest_absUrl - 2019.05.15 at 20h 58m 40s.xml">
+      <configuration name="JsoupCrawlerTest.absUrl" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="JsoupCrawlerTest_absUrl - 2019.05.15 at 20h 59m 38s.xml">
+      <configuration name="JsoupCrawlerTest.absUrl" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="JsoupCrawlerTest_absUrl - 2019.05.15 at 21h 01m 19s.xml">
+      <configuration name="JsoupCrawlerTest.absUrl" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="JsoupCrawlerTest_absUrl - 2019.05.15 at 21h 02m 19s.xml">
+      <configuration name="JsoupCrawlerTest.absUrl" configurationId="AndroidJUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -339,7 +369,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -349,12 +379,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.328125" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.42410713" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.42299107" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32924107" />
       <window_info anchor="bottom" id="CheckStyle" order="7" weight="0.32924107" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3314732" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3348365" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32924107" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Tail" order="11" />
@@ -395,6 +425,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="네이버 스포츠 주요뉴스 기사제목 크롤링" />
@@ -403,13 +447,14 @@
     <MESSAGE value="makeHtml 메서드, 테스트코드 작성" />
     <MESSAGE value="refactoring, makeHtmlTag 메서드 추가" />
     <MESSAGE value="refactoring 및 writeHtml 메서드 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring 및 writeHtml 메서드 추가" />
+    <MESSAGE value="크롤링된 뉴스 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="크롤링된 뉴스 생성" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/MyJsoupWebCrawler" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
+        <state relative-caret-position="625">
           <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
         </state>
       </provider>
@@ -424,14 +469,14 @@
     <entry file="file://$PROJECT_DIR$/주요뉴스.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="217" lean-forward="true" selection-start-column="217" selection-end-column="217" />
+          <caret column="549" lean-forward="true" selection-start-column="549" selection-end-column="549" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/JsoupCrawlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="12" column="206" selection-start-line="12" selection-start-column="206" selection-end-line="12" selection-end-column="206" />
+        <state relative-caret-position="304">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -440,8 +485,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JsoupCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="154">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

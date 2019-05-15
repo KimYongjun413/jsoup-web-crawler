@@ -27,4 +27,16 @@ public class JsoupCrawlerTest {
         assertEquals("<a href=\"http://example.com/\"><b>example</b></a>",link.outerHtml());
         assertEquals("<b>example</b>",link.html());
     }
+
+    @Test
+    public void absUrl() {
+        String URL = "https://sports.news.naver.com/kbaseball/index.nhn";
+
+        String href = "/kbaseball/news/read.nhn?oid=119&aid=0002328883";
+        assertEquals("https://sports.news.naver.com/kbaseball/news/read.nhn?oid=119&aid=0002328883", JsoupCrawler.absUrl(URL, href));
+        href = "/kbaseball/news/read.nhn?oid=109&aid=0004009093";
+        assertEquals("https://sports.news.naver.com/kbaseball/news/read.nhn?oid=109&aid=0004009093", JsoupCrawler.absUrl(URL, href));
+        href = "/kbaseball/news/read.nhn?oid=477&aid=0000183324";
+        assertEquals("https://sports.news.naver.com/kbaseball/news/read.nhn?oid=477&aid=0000183324", JsoupCrawler.absUrl(URL, href));
+    }
 }
