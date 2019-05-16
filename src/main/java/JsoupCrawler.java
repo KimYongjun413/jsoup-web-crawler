@@ -4,6 +4,8 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -59,9 +61,10 @@ public class JsoupCrawler {
         return html.toString();
     }
 
-    public static String absUrl(String url, String relHref) {
-        int idx = url.indexOf(relHref.split("/")[1]);
-        return url.substring(0,idx -1) + relHref;
+    public static String absUrl(String url, String relUrl) throws MalformedURLException {
+        URL baseUrl = new URL(url);
+        URL relativeUrl = new URL(baseUrl,relUrl);
+        return relativeUrl.toString();
     }
 }
 
