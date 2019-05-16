@@ -3,11 +3,14 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+
+import static org.jsoup.nodes.Document.OutputSettings.Syntax.html;
 
 public class JsoupCrawler {
 
@@ -31,19 +34,10 @@ public class JsoupCrawler {
         }
     }
 
-    public static String writeHtml(String htmlTag) {
-        StringBuilder html = new StringBuilder();
-        html.append("<!DOCTYPE html>");
-        html.append("<html lang=\"ko\">");
-        html.append("<head> <meta charset=\"utf-8\">");
-        html.append("<title>주요뉴스 Crawling</title>");
-        html.append("<style>.major-news {color:orange;text-shadow:1px 1px;}</style>");
-        html.append("</head>");
-        html.append("<body><div><h1 class=\"major-news\">주요뉴스</h1><ul>");
-        html.append(htmlTag);
-        html.append("</ul></div></body>");
-        html.append("</html>");
-        return html.toString();
+    public static String writeHtml(String htmlTag) throws IOException {
+        String content = Jsoup.parse(new File("src/main/htmlTemplate/MajorNewsTemplate.html"), "UTF-8").toString();
+        content = content.replace("<li>htmlTag</li>", htmlTag);
+        return content;
     }
 
     public static String makeHtml(String htmlTag) {

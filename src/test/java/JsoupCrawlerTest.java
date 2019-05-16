@@ -10,13 +10,6 @@ import static org.junit.Assert.*;
 
 public class JsoupCrawlerTest {
 
-
-    @Test
-    public void writeHtml() {
-        assertEquals("<!DOCTYPE html><html lang=\"ko\"><head> <meta charset=\"utf-8\"><title>주요뉴스 Crawling</title><style>.major-news {color:orange;text-shadow:1px 1px;}</style></head><body><div><h1 class=\"major-news\">주요뉴스</h1><ul><li>test_html_tag</li></ul></div></body></html>", JsoupCrawler.writeHtml("<li>test_html_tag</li>"));
-        assertEquals("<!DOCTYPE html><html lang=\"ko\"><head> <meta charset=\"utf-8\"><title>주요뉴스 Crawling</title><style>.major-news {color:orange;text-shadow:1px 1px;}</style></head><body><div><h1 class=\"major-news\">주요뉴스</h1><ul><li>Kim Yongjun</li></ul></div></body></html>", JsoupCrawler.writeHtml("<li>Kim Yongjun</li>"));
-    }
-
     @Test
     public void Cookbook() {
         try {
